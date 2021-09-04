@@ -1,21 +1,20 @@
 package pages;
 
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
-import org.hamcrest.core.Is;
 import org.junit.Assert;
+import validators.TestValidator;
 
 import static io.restassured.RestAssured.*;
 
 public class TestPage{
 
+    TestValidator testValidator = new TestValidator();
+
     public boolean executeGet() {
         try {
             Response response = given()
                     .get("https://reqres.in/api/users?page=2");
-            Assert.assertEquals(200, response.statusCode());
+            testValidator.validaExecuteGet(response);
         }catch (Exception e){
             return false;
         }
@@ -35,9 +34,10 @@ public class TestPage{
                     .post("https://reqres.in/api/users")
                     .then()
                     .extract().response();
-            Assert.assertEquals(201, response.statusCode());
-            Assert.assertEquals("morpheus", response.jsonPath().getString("name"));
-            Assert.assertEquals("leader", response.jsonPath().getString("job"));
+            testValidator.validaExecutePOST(response);
+//            Assert.assertEquals(201, response.statusCode());
+//            Assert.assertEquals("morpheus", response.jsonPath().getString("name"));
+//            Assert.assertEquals("leader", response.jsonPath().getString("job"));
         }catch (Exception e){
             return false;
         }

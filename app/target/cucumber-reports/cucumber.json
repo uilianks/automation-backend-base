@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-03T23:47:09.795Z",
+        "start_timestamp": "2021-09-04T00:15:21.103Z",
         "line": 4,
         "name": "Create a GET",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1478989800,
+              "duration": 1429497700,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +31,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-03T23:47:11.314Z",
+        "start_timestamp": "2021-09-04T00:15:22.575Z",
         "line": 8,
         "name": "Create a POST",
         "description": "",
@@ -41,7 +41,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1057056300,
+              "duration": 1020187400,
               "status": "passed"
             },
             "line": 9,
@@ -59,7 +59,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-03T23:47:12.374Z",
+        "start_timestamp": "2021-09-04T00:15:23.599Z",
         "line": 12,
         "name": "Create a PUT",
         "description": "",
@@ -69,7 +69,7 @@
         "steps": [
           {
             "result": {
-              "duration": 718813300,
+              "duration": 724477700,
               "status": "passed"
             },
             "line": 13,
@@ -87,7 +87,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-03T23:47:13.096Z",
+        "start_timestamp": "2021-09-04T00:15:24.327Z",
         "line": 16,
         "name": "Create a DELETE",
         "description": "",
@@ -97,7 +97,7 @@
         "steps": [
           {
             "result": {
-              "duration": 684668300,
+              "duration": 682388400,
               "status": "passed"
             },
             "line": 17,
